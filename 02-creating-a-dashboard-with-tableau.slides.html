@@ -14843,6 +14843,45 @@ div.jp-OutputPrompt {
 </ul>
 
 </div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Build-a-bar-race-with-functions">Build a bar race with functions<a class="anchor-link" href="#Build-a-bar-race-with-functions">&#182;</a></h2><ul>
+<li>Create another worksheet.</li>
+<li>Create a calculated field <code>Confirmed Ranking</code> with the following functions.</li>
+</ul>
+\begin{equation}
+\text{Confirmed Ranking} = \text{RANK_UNIQUE} \Big( \text{SUM} \big( \text{Confirmed (time series.csv)} \big) \Big)
+\end{equation}
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Build-a-bar-race-with-functions(cont'd)">Build a bar race with functions(cont'd)<a class="anchor-link" href="#Build-a-bar-race-with-functions(cont'd)">&#182;</a></h2><ul>
+<li>Dragging <code>Confirmed (time series.csv)</code> onto Columns.</li>
+<li>Dragging <code>Confirmed Ranking</code> onto Rows.</li>
+<li>Dragging <code>Country Region (time series.csv)</code> onto Color and Label.</li>
+</ul>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Build-a-bar-race-with-functions(cont'd)">Build a bar race with functions(cont'd)<a class="anchor-link" href="#Build-a-bar-race-with-functions(cont'd)">&#182;</a></h2><ul>
+<li>Convert <code>Confirmed Ranking</code> to discrete and computing using <code>Country Region (time series.csv)</code>.</li>
+</ul>
+<p><img src="https://i.imgur.com/xzdsTUK.png" alt=""></p>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Build-a-bar-race-with-functions(cont'd)">Build a bar race with functions(cont'd)<a class="anchor-link" href="#Build-a-bar-race-with-functions(cont'd)">&#182;</a></h2><ul>
+<li>Dragging Date onto Pages and switch to WEEK(Date).</li>
+<li>Format &gt; Animations... to adjust Duration to Slow.</li>
+</ul>
+
+</div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
