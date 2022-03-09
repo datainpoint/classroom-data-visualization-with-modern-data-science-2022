@@ -16490,6 +16490,318 @@ div.jp-OutputPrompt {
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Using-the-IN-operator">Using the <code>IN</code> operator<a class="anchor-link" href="#Using-the-IN-operator">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-mysql"><pre><span></span><span class="k">SELECT</span> <span class="n">Country_Region</span><span class="p">,</span>
+       <span class="n">Province_State</span><span class="p">,</span>
+       <span class="n">Population</span>
+  <span class="k">FROM</span> <span class="n">lookup_table</span>
+ <span class="k">WHERE</span> <span class="n">Country_Region</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;Taiwan&#39;</span><span class="p">,</span> <span class="s1">&#39;Japan&#39;</span><span class="p">,</span> <span class="s1">&#39;Korea, South&#39;</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<table>
+<tr>
+<th>Country_Region</th>
+<th>Province_State</th>
+<th>Population</th>
+</tr>
+<tr>
+<td>Taiwan</td>
+<td>NULL</td>
+<td>23816775</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>NULL</td>
+<td>126476458</td>
+</tr>
+<tr>
+<td>Korea, South</td>
+<td>Korea</td>
+<td>51269183</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Aichi</td>
+<td>7552239</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Akita</td>
+<td>966490</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Aomori</td>
+<td>1246371</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Chiba</td>
+<td>6259382</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Ehime</td>
+<td>1339215</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Fukui</td>
+<td>767937</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Fukuoka</td>
+<td>5103679</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Fukushima</td>
+<td>1845519</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Gifu</td>
+<td>1986587</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Gunma</td>
+<td>1942456</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Hiroshima</td>
+<td>2804177</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Hokkaido</td>
+<td>5250049</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Hyogo</td>
+<td>5466190</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Ibaraki</td>
+<td>2860307</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Ishikawa</td>
+<td>1137649</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Iwate</td>
+<td>1226816</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Kagawa</td>
+<td>956347</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Kagoshima</td>
+<td>1602273</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Kanagawa</td>
+<td>9198268</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Kochi</td>
+<td>698029</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Kumamoto</td>
+<td>1747567</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Kyoto</td>
+<td>2582957</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Mie</td>
+<td>1780882</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Miyagi</td>
+<td>2306365</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Miyazaki</td>
+<td>1073301</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Nagano</td>
+<td>2048790</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Nagasaki</td>
+<td>1326524</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Nara</td>
+<td>1330123</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Niigata</td>
+<td>2223106</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Oita</td>
+<td>1135434</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Okayama</td>
+<td>1889586</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Okinawa</td>
+<td>1453168</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Osaka</td>
+<td>8809363</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Saga</td>
+<td>814711</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Saitama</td>
+<td>7349693</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Shiga</td>
+<td>1413943</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Shimane</td>
+<td>674346</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Shizuoka</td>
+<td>3643528</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Tochigi</td>
+<td>1933990</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Tokushima</td>
+<td>727977</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Tokyo</td>
+<td>13920663</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Tottori</td>
+<td>555558</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Toyama</td>
+<td>1043502</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Wakayama</td>
+<td>924933</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Yamagata</td>
+<td>1077666</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Yamaguchi</td>
+<td>1358336</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Yamanashi</td>
+<td>810956</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Port Quarantine</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Unknown</td>
+<td>NULL</td>
+</tr>
+</table>
+52 rows in set (0.00 sec)
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Using-LIKE-with-WHERE">Using <code>LIKE</code> with <code>WHERE</code><a class="anchor-link" href="#Using-LIKE-with-WHERE">&#182;</a></h2><p>Relational operators are fairly straightforward, but <code>LIKE</code> deserves additional explanations.</p>
 
 </div>
@@ -16510,7 +16822,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-mysql"><pre><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">Country_Region</span>
@@ -16531,7 +16843,7 @@ div.jp-OutputPrompt {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 
 
 
@@ -16579,7 +16891,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-mysql"><pre><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">Country_Region</span>
@@ -16600,7 +16912,7 @@ div.jp-OutputPrompt {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 
 
 
@@ -16639,7 +16951,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-mysql"><pre><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">Country_Region</span>
@@ -16661,7 +16973,7 @@ div.jp-OutputPrompt {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 
 
 
@@ -16694,7 +17006,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-mysql"><pre><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">Country_Region</span>
@@ -16716,7 +17028,7 @@ div.jp-OutputPrompt {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 
 
 
