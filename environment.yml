@@ -1,0 +1,12 @@
+name: xeus-sql
+channels:
+  - conda-forge
+dependencies:
+  - soci-sqlite
+  - jupyterlab
+  - xeus-sql
+  - numpy
+  - pandas
+  - rise
+  - matplotlib
+  - seaborn
