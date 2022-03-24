@@ -15462,6 +15462,49 @@ Empty set (0.00 sec)
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Planning-a-database">Planning a database<a class="anchor-link" href="#Planning-a-database">&#182;</a></h2><ol>
+<li>Design questions.</li>
+<li>Data questions.</li>
+<li>Security questions.</li>
+</ol>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Design-questions">Design questions<a class="anchor-link" href="#Design-questions">&#182;</a></h2><ul>
+<li>What are the business requirements?</li>
+<li>What tables will I need to fulfill those requirements?</li>
+<li>What columns will each table contain?</li>
+<li>...etc.</li>
+</ul>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Data-questions">Data questions<a class="anchor-link" href="#Data-questions">&#182;</a></h2><ul>
+<li>How much data will be populated into these tables?</li>
+<li>Where will the data come from?</li>
+<li>Do we need processes to automatically populate the tables?</li>
+<li>...etc.</li>
+</ul>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Security-questions">Security questions<a class="anchor-link" href="#Security-questions">&#182;</a></h2><ul>
+<li>Who should have access to this database?</li>
+<li>Who should have access to which tables? Read-only access? Write access?</li>
+<li>Is this database critical to business operations?</li>
+<li>...etc.</li>
+</ul>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Create-a-new-database-using-SQLiteStudio">Create a new database using SQLiteStudio<a class="anchor-link" href="#Create-a-new-database-using-SQLiteStudio">&#182;</a></h2><p>Database &gt; Add a Database.</p>
 <p><img src="https://i.imgur.com/ioRzyif.png" alt=""></p>
 
@@ -16206,6 +16249,22 @@ Error: sqlite3_statement_backend::prepare: no such table: actors while preparing
 
 </div>
 
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="We-can-also-use-SQLiteStudio-to-import-CSV-file-as-a-table">We can also use SQLiteStudio to import CSV file as a table<a class="anchor-link" href="#We-can-also-use-SQLiteStudio-to-import-CSV-file-as-a-table">&#182;</a></h2><p><img src="https://i.imgur.com/qhMFMRP.png" alt=""></p>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Try-to-DROP-DATABASE-covid19.db-and-create-from-scratch">Try to <code>DROP DATABASE covid19.db</code> and create from scratch<a class="anchor-link" href="#Try-to-DROP-DATABASE-covid19.db-and-create-from-scratch">&#182;</a></h2><ul>
+<li><a href="https://ntu-viz.s3.ap-northeast-1.amazonaws.com/covid19/daily_report.csv">daily_report.csv</a></li>
+<li><a href="https://ntu-viz.s3.ap-northeast-1.amazonaws.com/covid19/lookup_table.csv">lookup_table.csv</a></li>
+<li><a href="https://ntu-viz.s3.ap-northeast-1.amazonaws.com/covid19/time_series.csv">time_series.csv</a></li>
+</ul>
+
+</div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -17598,6 +17657,20 @@ Error: sqlite3_statement_backend::prepare: no such table: lookup_table_tw_sg whi
 <span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">daily_report_no_keys</span><span class="p">;</span>
 <span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">time_series_no_keys</span><span class="p">;</span>
 </pre></div>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="ER-diagram">ER diagram<a class="anchor-link" href="#ER-diagram">&#182;</a></h2><blockquote><p>An entity–relationship model (or ER model) describes interrelated things of interest in a specific domain of knowledge. A basic ER model is composed of entity types (which classify the things of interest) and specifies relationships that can exist between entities (instances of those entity types).</p>
+</blockquote>
+<p>Source: <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model</a></p>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="ER-diagram-of-covid19.db">ER diagram of <code>covid19.db</code><a class="anchor-link" href="#ER-diagram-of-covid19.db">&#182;</a></h2><p><img src="https://i.imgur.com/FuQXsEj.png" alt=""></p>
 
 </div>
 </div></section></section>
