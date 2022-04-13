@@ -14778,6 +14778,15 @@ div.jp-OutputPrompt {
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Command-to-install-a-specific-module">Command to install a specific module<a class="anchor-link" href="#Command-to-install-a-specific-module">&#182;</a></h2><div class="highlight"><pre><span></span><span class="c1"># run in command line, do not run in jupyter notebooks.</span>
+<span class="o">(</span>base<span class="o">)</span> conda install jupyterlab <span class="c1"># or run pip install jupyterlab</span>
+<span class="o">(</span>base<span class="o">)</span> jupyter lab <span class="c1"># or run jupyter notebook</span>
+</pre></div>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="A-tour-of-planet-Jupyter">A tour of planet Jupyter<a class="anchor-link" href="#A-tour-of-planet-Jupyter">&#182;</a></h2><ul>
 <li><code>/tree</code> for classic Jupyter Notebook.</li>
 <li><code>/lab</code> for Jupyter Lab.</li>
@@ -14787,20 +14796,9 @@ div.jp-OutputPrompt {
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="At-the-homepage-of-your-Jupyter-Notebook-Server">At the homepage of your Jupyter Notebook Server<a class="anchor-link" href="#At-the-homepage-of-your-Jupyter-Notebook-Server">&#182;</a></h2><ul>
-<li>New &gt; Text File.</li>
-<li>New &gt; Terminal.</li>
-<li>New &gt; Terminal &gt; Type <code>python --version</code> then hit Enter.</li>
-<li>New &gt; Notebook.</li>
-</ul>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="A-few-Python-programs-to-try-on-first">A few Python programs to try on first<a class="anchor-link" href="#A-few-Python-programs-to-try-on-first">&#182;</a></h2><ul>
+<h2 id="A-few-Python-programs-to-try-on-first-in-notebooks/scripts">A few Python programs to try on first in notebooks/scripts<a class="anchor-link" href="#A-few-Python-programs-to-try-on-first-in-notebooks/scripts">&#182;</a></h2><ul>
 <li>Hello, world!</li>
-<li>The Zen of Python.</li>
+<li>Zen of Python.</li>
 </ul>
 
 </div>
@@ -14939,14 +14937,6 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Command-to-install-a-specific-module">Command to install a specific module<a class="anchor-link" href="#Command-to-install-a-specific-module">&#182;</a></h2><div class="highlight"><pre><span></span><span class="c1"># run in command line, do not run in jupyter notebooks.</span>
-<span class="o">(</span>base<span class="o">)</span> conda install jupyterlab <span class="c1"># or run pip install jupyterlab</span>
-</pre></div>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Command-to-validate-available-environments">Command to validate available environments<a class="anchor-link" href="#Command-to-validate-available-environments">&#182;</a></h2><div class="highlight"><pre><span></span><span class="c1"># run in command line, do not run in jupyter notebooks.</span>
 <span class="o">(</span>base<span class="o">)</span> conda env list
 </pre></div>
@@ -14973,7 +14963,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Command-to-install-some-third-party-modules-in-current-environment">Command to install some third-party modules in current environment<a class="anchor-link" href="#Command-to-install-some-third-party-modules-in-current-environment">&#182;</a></h2><div class="highlight"><pre><span></span><span class="c1"># run in command line, do not run in jupyter notebooks.</span>
-<span class="o">(</span>vizwithds<span class="o">)</span> conda install ipykernel numpy pandas matplotlib xlrd openpyxl# or run pip install ipykernel
+<span class="o">(</span>vizwithds<span class="o">)</span> conda install ipykernel numpy pandas matplotlib xlrd openpyxl <span class="c1"># or run pip install ipykernel numpy pandas matplotlib xlrd openpyxl</span>
 </pre></div>
 
 </div>
@@ -14989,7 +14979,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Command-to-add-new-kernels-for-Jupyter-Notebook">Command to add new kernels for Jupyter Notebook<a class="anchor-link" href="#Command-to-add-new-kernels-for-Jupyter-Notebook">&#182;</a></h2><div class="highlight"><pre><span></span><span class="c1"># run in command line, do not run in jupyter notebooks.</span>
-<span class="o">(</span>vizwithds<span class="o">)</span> python -m ipykernel install --user --name vizwithds --display-name <span class="s2">&quot;Visualization with Modern Data Science&quot;</span>
+<span class="o">(</span>vizwithds<span class="o">)</span> python -m ipykernel install --user --name vizwithds --display-name <span class="s2">&quot;Viz with Modern DS&quot;</span>
 </pre></div>
 
 </div>
@@ -15320,8 +15310,9 @@ class _Helper(builtins.object)
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Besides-built-in-functions-or-library-powered-functions,-we-sometimes-need-to-self-define-our-own-functions">Besides built-in functions or library-powered functions, we sometimes need to self-define our own functions<a class="anchor-link" href="#Besides-built-in-functions-or-library-powered-functions,-we-sometimes-need-to-self-define-our-own-functions">&#182;</a></h2><ul>
-<li><code>def</code> the name of our function</li>
-<li><code>return</code> the output of our function</li>
+<li><code>def</code> the name of our function.</li>
+<li><code>return</code> the output of our function.</li>
+<li><code>type</code> is optional.</li>
 </ul>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">INPUTS</span><span class="p">:</span> <span class="nb">type</span><span class="p">,</span> <span class="n">PARAMETERS</span><span class="p">:</span> <span class="nb">type</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">type</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -16898,15 +16889,10 @@ True
 <h2 id="Built-in-data-structures-refer-to-those-need-no-self-definition-or-importing">Built-in data structures refer to those need no self-definition or importing<a class="anchor-link" href="#Built-in-data-structures-refer-to-those-need-no-self-definition-or-importing">&#182;</a></h2><p>Quite similar to the comparison of built-in functions vs. self-defined/third party functions.</p>
 
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Built-in-Data-Structure:-list">Built-in Data Structure: <code>list</code><a class="anchor-link" href="#Built-in-Data-Structure:-list">&#182;</a></h2>
-</div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Lists">Lists<a class="anchor-link" href="#Lists">&#182;</a></h2><p>Lists are the basic ordered and mutable data collection type in Python. They can be defined with comma-separated values between brackets.</p>
+<h2 id="Built-in-Data-Structure:-list">Built-in Data Structure: <code>list</code><a class="anchor-link" href="#Built-in-Data-Structure:-list">&#182;</a></h2><p>Lists are the basic ordered and mutable data collection type in Python. They can be defined with comma-separated values between brackets.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -17225,15 +17211,10 @@ True
 
 </div>
 
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Built-in-Data-Structure:-tuple">Built-in Data Structure: <code>tuple</code><a class="anchor-link" href="#Built-in-Data-Structure:-tuple">&#182;</a></h2>
-</div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Tuples">Tuples<a class="anchor-link" href="#Tuples">&#182;</a></h2><p>Tuples are in many ways similar to lists, but they are defined with parentheses rather than brackets.</p>
+<h2 id="Built-in-Data-Structure:-tuple">Built-in Data Structure: <code>tuple</code><a class="anchor-link" href="#Built-in-Data-Structure:-tuple">&#182;</a></h2><p>Tuples are in many ways similar to lists, but they are defined with parentheses rather than brackets.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -17451,15 +17432,10 @@ Taipei
 
 </div>
 
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Built-in-Data-Structure:-dict">Built-in Data Structure: <code>dict</code><a class="anchor-link" href="#Built-in-Data-Structure:-dict">&#182;</a></h2>
-</div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Dictionaries">Dictionaries<a class="anchor-link" href="#Dictionaries">&#182;</a></h2><p>Dictionaries are extremely flexible mappings of keys to values, and form the basis of much of Python's internal implementation. They can be created via a comma-separated list of <code>key:value</code> pairs within braces.</p>
+<h2 id="Built-in-Data-Structure:-dict">Built-in Data Structure: <code>dict</code><a class="anchor-link" href="#Built-in-Data-Structure:-dict">&#182;</a></h2><p>Dictionaries are extremely flexible mappings of keys to values, and form the basis of much of Python's internal implementation. They can be created via a comma-separated list of <code>key:value</code> pairs within braces.</p>
 
 </div>
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -17685,15 +17661,10 @@ dict_items([(&#39;isNBAFranchise&#39;, True), (&#39;city&#39;, &#39;Boston&#39;)
 
 </div>
 
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Built-in-Data-Structure:-set">Built-in Data Structure: <code>set</code><a class="anchor-link" href="#Built-in-Data-Structure:-set">&#182;</a></h2>
-</div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Sets">Sets<a class="anchor-link" href="#Sets">&#182;</a></h2><p>The fourth basic collection is the set, which contains unordered collections of unique items. They are defined much like lists and tuples, except they use the braces.</p>
+<h2 id="Built-in-Data-Structure:-set">Built-in Data Structure: <code>set</code><a class="anchor-link" href="#Built-in-Data-Structure:-set">&#182;</a></h2><p>The fourth basic collection is the set, which contains unordered collections of unique items. They are defined much like lists and tuples, except they use the braces.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -17992,11 +17963,6 @@ dict_items([(&#39;isNBAFranchise&#39;, True), (&#39;city&#39;, &#39;Boston&#39;)
 <li>Handling exceptions</li>
 </ul>
 
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Conditional-Executions">Conditional Executions<a class="anchor-link" href="#Conditional-Executions">&#182;</a></h2>
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -18431,11 +18397,6 @@ None
 
 </div>
 
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Iterations">Iterations<a class="anchor-link" href="#Iterations">&#182;</a></h2>
-</div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -19663,15 +19624,10 @@ Christopher Nolan
 
 </div>
 
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Handling-Exceptions">Handling Exceptions<a class="anchor-link" href="#Handling-Exceptions">&#182;</a></h2>
-</div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Coding-mistakes-are-common,-they-happen-all-the-time">Coding mistakes are common, they happen all the time<a class="anchor-link" href="#Coding-mistakes-are-common,-they-happen-all-the-time">&#182;</a></h2><p><img src="https://i.imgur.com/t9sYsyk.jpg?1" alt="Imgur"></p>
+<h2 id="(Optional)Coding-mistakes-are-common,-they-happen-all-the-time">(Optional)Coding mistakes are common, they happen all the time<a class="anchor-link" href="#(Optional)Coding-mistakes-are-common,-they-happen-all-the-time">&#182;</a></h2><p><img src="https://i.imgur.com/t9sYsyk.jpg?1" alt="Imgur"></p>
 <p>Source: Google Search</p>
 
 </div>
